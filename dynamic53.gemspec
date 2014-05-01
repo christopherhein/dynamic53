@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["me@christopherhein.com"]
   spec.description   = %q{Setup dynamic dns service using Route 53 and Ruby}
   spec.summary       = %q{Simple ruby executable that will allow you to setup 'dynamic dns' to a local network like dyndns or any other dynamic dns service using Route 53 and Ruby}
-  spec.homepage      = "http://christopherhein.github.io/dynamic53"
+  spec.homepage      = "https://github.com/christopherhein/dynamic53"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
