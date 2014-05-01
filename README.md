@@ -20,7 +20,11 @@ Or install it yourself as:
 
 Now that the gem is installed you can run
 
-    $ dynamic53 {{somehostname}}
+    $ dynamic53 {{zonename}} {{somesubdomain}}    
+
+Or if you'd like it to use a stringified version of the bonjour name use
+
+    $ dynamic53 {{zonename}}
 
 This will update the route 53 record with the machines current ip.
 
