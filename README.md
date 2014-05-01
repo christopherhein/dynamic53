@@ -16,15 +16,19 @@ Or install it yourself as:
 
     $ gem install dynamic53
 
+Now setup a `~/.dynamic53` file in your home directory with the AWS access key and secret comma delimited like
+
+    echo "xxxx,xxxx" > ~/.dynamic53
+
 ## Usage
 
 Now that the gem is installed you can run
 
-    $ dynamic53 {{zonename}} {{somesubdomain}}    
+    $ dynamic53 {{user}} {{zonename}} {{somesubdomain}}    
 
 Or if you'd like it to use a stringified version of the bonjour name use
 
-    $ dynamic53 {{zonename}}
+    $ dynamic53 {{user}} {{zonename}}
 
 This will update the route 53 record with the machines current ip.
 
