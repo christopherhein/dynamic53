@@ -25,7 +25,7 @@ module Dynamic53
     private
     
     def create_record
-      record = Route53::DNSRecord.new("#{update_hostname}.#{hostname}.","CNAME","60",[local_ip], zone)
+      record = Route53::DNSRecord.new("#{update_hostname}.#{hostname}.","A","60",[local_ip], zone)
       record.create
     end
     
@@ -34,7 +34,7 @@ module Dynamic53
     end
     
     def record
-      @record ||= zone.get_records("CNAME").select {|r| r.name =~ /#{update_hostname}/ }.first
+      @record ||= zone.get_records("A").select {|r| r.name =~ /#{update_hostname}/ }.first
     end
     
     def zone
